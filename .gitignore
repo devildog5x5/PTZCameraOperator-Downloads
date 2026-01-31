@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vs/
+*.user
+*.suo
+
+# Binaries live on PTZ_Interface/releases (GitHub 100MB limit); this repo is the download page only
+releases/

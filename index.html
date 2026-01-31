@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PTZ Camera Operator — Download</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --card: #16213e;
+      --accent: #0f3460;
+      --primary: #00bfff;
+      --primary-dim: #0099cc;
+      --text: #e8e8e8;
+      --muted: #a0a0a0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.5;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    .subtitle { color: var(--muted); margin-bottom: 2rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 0.5rem 0;
+      color: var(--text);
+    }
+    .card p {
+      margin: 0 0 1rem 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .card a.dl {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--bg);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .card a.dl:hover {
+      background: var(--primary-dim);
+    }
+    .note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--accent);
+    }
+    .note a { color: var(--primary); }
+    .direct-links {
+      margin: 0;
+      padding-left: 1.25rem;
+      font-size: 0.9rem;
+    }
+    .direct-links li { margin-bottom: 0.5rem; }
+    .direct-links a {
+      color: var(--primary);
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PTZ Camera Operator</h1>
+    <p class="subtitle">Download the latest build — Windows installer, portable ZIP, or executable.</p>
+
+    <div class="card">
+      <h2>Windows installer (recommended)</h2>
+      <p>Setup wizard, Start Menu shortcut, uninstaller. Best for most users.</p>
+      <a class="dl" href="https://github.com/devildog5x5/PTZ_Interface/releases/latest/download/PTZCameraOperatorSetup.exe" download>Download PTZCameraOperatorSetup.exe</a>
+    </div>
+
+    <div class="card">
+      <h2>Portable ZIP</h2>
+      <p>No install — extract and run <code>PTZCameraOperator.exe</code>. Includes .NET runtime and LibVLC.</p>
+      <a class="dl" href="https://github.com/devildog5x5/PTZ_Interface/releases/latest/download/PTZCameraOperator-Portable.zip" download>Download PTZCameraOperator-Portable.zip</a>
+    </div>
+
+    <div class="card">
+      <h2>Executable</h2>
+      <p><code>PTZCameraOperator.exe</code> is inside the portable ZIP. Download the ZIP above and extract to run the executable.</p>
+      <a class="dl" href="https://github.com/devildog5x5/PTZ_Interface/releases/latest/download/PTZCameraOperator-Portable.zip" download>Download portable ZIP (contains PTZCameraOperator.exe)</a>
+    </div>
+
+    <div class="card">
+      <h2>Direct links</h2>
+      <p>Copy these URLs (from PTZ_Interface releases):</p>
+      <ul class="direct-links">
+        <li><strong>Installer:</strong> <a href="https://github.com/devildog5x5/PTZ_Interface/releases/latest/download/PTZCameraOperatorSetup.exe">PTZCameraOperatorSetup.exe</a></li>
+        <li><strong>Portable ZIP:</strong> <a href="https://github.com/devildog5x5/PTZ_Interface/releases/latest/download/PTZCameraOperator-Portable.zip">PTZCameraOperator-Portable.zip</a></li>
+        <li><strong>Release page (all assets):</strong> <a href="https://github.com/devildog5x5/PTZ_Interface/releases/latest">Latest release</a></li>
+      </ul>
+    </div>
+
+    <p class="note">
+      <strong>External URL (after enabling GitHub Pages):</strong> <a href="https://devildog5x5.github.io/PTZCameraOperator-Downloads/">https://devildog5x5.github.io/PTZCameraOperator-Downloads/</a><br>
+      Source and docs: <a href="https://github.com/devildog5x5/PTZ_Interface">PTZ_Interface</a>.
+      To update this page, run <code>copy-build-to-downloads.ps1</code> from the main repo and push.
+    </p>
+  </div>
+</body>
+</html>
